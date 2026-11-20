@@ -37,8 +37,8 @@
   
   <g transform="translate(480, 96)" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#94a3b8">
     <text x="0" y="0" fill="#ffffff" font-weight="600">Panorama Geral</text>
-    <text x="130" y="0">Blocos & Bacias</text>
-    <text x="250" y="0">Relatórios & Dados</text>
+    <text x="130" y="0">Blocos &amp; Bacias</text>
+    <text x="250" y="0">Relatórios &amp; Dados</text>
     <text x="370" y="0">Legislação</text>
   </g>
 

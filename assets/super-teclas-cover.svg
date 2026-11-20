@@ -118,8 +118,8 @@
         <text x="0" y="42" fill="#ffffff">capacitar </text>
         <line x1="120" y1="20" x2="120" y2="46" stroke="#00F5D4" stroke-width="2.5" filter="url(#stGlow)"/>
         <!-- Remaining text (Muted) -->
-        <text x="128" y="42" fill="#475569">uma nova gerao de profissionais e mentes digitais com </text>
-        <text x="0" y="84" fill="#334155">dactilografia rpida, interfaces ergonmicas e design de vanguarda.</text>
+        <text x="128" y="42" fill="#475569">uma nova geração de profissionais e mentes digitais com </text>
+        <text x="0" y="84" fill="#334155">dactilografia rápida, interfaces ergonómicas e design de vanguarda.</text>
       </g>
 
       <!-- Bottom Progress Bar -->

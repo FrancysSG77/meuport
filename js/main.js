@@ -28,7 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(THEME_STORAGE_KEY, theme);
 
     if (themeModeText) {
-      themeModeText.textContent = theme === 'dark' ? 'DARK' : 'LIGHT';
+      themeModeText.textContent = theme === 'dark' ? 'CLARO' : 'ESCURO';
+    }
+
+    if (themeToggleBtn) {
+      const actionLabel = theme === 'dark' ? 'Mudar para Modo Claro' : 'Mudar para Modo Escuro';
+      themeToggleBtn.setAttribute('aria-label', actionLabel);
+      themeToggleBtn.setAttribute('title', actionLabel);
     }
 
     // Update meta theme-color for mobile browser toolbar
@@ -89,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // ================= 2. LIVE CLOCK (GMT / UTC+1) =================
+  // ================= 2. LIVE CLOCK (WAT / AFRICA/LUANDA) =================
   const liveClock = document.getElementById('liveClock');
   function updateClock() {
     if (!liveClock) return;
@@ -99,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
       minute: '2-digit',
       second: '2-digit',
       hour12: false,
+      timeZone: 'Africa/Luanda',
     });
   }
   updateClock();
@@ -248,9 +255,9 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'super-teclas': {
       title: 'Super Teclas',
-      subtitle: 'Projeto de Interface Interativa & Dactilografia Angolano',
+      subtitle: 'Plataforma Angolana de Dactilografia & Interface Interativa',
       category: 'UI/UX Design • Interface Interativa',
-      image: './assets/super-teclas-cover.jpg',
+      image: './assets/super-teclas-cover.svg',
       fallbackImage: './assets/super-teclas-cover.svg',
       challenge:
         'Conceber e redesenhar a interface do utilizador (Desktop e Mobile) para uma plataforma de jogo de digitação focada na juventude angolana, aliando métricas analíticas de velocidade (WPM e precisão) com uma estética moderna e gamificada.',
@@ -321,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Enterprise SaaS', 'Data Visualization', 'Dark Mode UI', 'Real-Time Telemetry'],
     },
     'securpro-postos': {
-      title: 'SecurPro — Gestão de Efectivos & Operativos',
+      title: 'SecurPro — Gestão de Efetivos & Operativos',
       subtitle: 'Diretório de Colaboradores, Filtros de Estado & Alocação',
       category: 'UI/UX Design • Enterprise SaaS',
       image: './assets/securpro-efetivos.jpeg',
@@ -420,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Website ANPG — Redesign & Design System',
       subtitle: 'Arquitetura de Interface Institucional para a ANPG',
       category: 'Web & Portais Corporativos • Design System',
-      image: './assets/anpg-web-concept.jpg',
+      image: './assets/anpg-web-concept.svg',
       fallbackImage: './assets/anpg-web-concept.svg',
       challenge:
         'Modernizar a experiência de navegação, hierarquia de informação e transparência de dados de um portal institucional estratégico no setor de petróleo, gás e biocombustíveis.',
@@ -442,15 +449,15 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'mirempet-bolsa': {
       title: 'Bolsa dos Profissionais do MIREMPET',
-      subtitle: 'Aplicação Móvel & Design System para Talentos do Setor',
-      category: 'Mobile App & Institucional • MIREMPET',
+      subtitle: 'Portal Web, App Mobile & Design System para Talentos do Setor',
+      category: 'Web & Portais Corporativos • Portal Web & App Mobile',
       image: './assets/mirempet-bolsa.svg',
       fallbackImage: './assets/mirempet-bolsa.svg',
       challenge:
-        'Criar uma experiência móvel intuitiva para conectar engenheiros, técnicos certificados e entidades empregadoras do setor de recursos minerais, petróleo e gás em Angola.',
+        'Criar uma experiência web e móvel intuitiva para conectar engenheiros, técnicos certificados e entidades empregadoras do setor de recursos minerais, petróleo e gás em Angola.',
       solution:
-        'Interface mobile com perfis profissionais validados, pesquisa filtrada por área técnica, candidaturas simplificadas em 1 toque e sistema de design escalável.',
-      tags: ['Mobile App UI', 'Design System', 'MIREMPET', 'Product Design'],
+        'Portal web e interface mobile com perfis profissionais validados, pesquisa filtrada por área técnica, candidaturas simplificadas em 1 toque e Design System escalável.',
+      tags: ['Portal Web & Mobile', 'Design System', 'MIREMPET', 'Product Design'],
     },
   };
 
@@ -779,24 +786,44 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach((el) => el.classList.add('revealed'));
   }
 
-  // ================= 10. HEADER ACTIVE NAV LINK ON SCROLL =================
-  const navTargets = document.querySelectorAll('#ui-ux, #design-grafico, #web-design, #servicos, #contacto');
+  // ================= 10. HEADER ACTIVE NAV LINK ON SCROLL (SCROLLSPY) =================
+  const navTargets = document.querySelectorAll('#hero, #ui-ux, #web-design, #design-grafico, #servicos, #contacto');
   const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+  function clearActiveNavLinks() {
+    navLinks.forEach((link) => link.classList.remove('nav-link-active'));
+  }
 
   if ('IntersectionObserver' in window && navLinks.length > 0) {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
+        if (window.scrollY < 240) {
+          clearActiveNavLinks();
+          return;
+        }
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const id = entry.target.id;
-            navLinks.forEach((link) => {
-              link.classList.toggle('nav-link-active', link.getAttribute('href') === `#${id}`);
-            });
+            if (id === 'hero') {
+              clearActiveNavLinks();
+            } else {
+              navLinks.forEach((link) => {
+                link.classList.toggle('nav-link-active', link.getAttribute('href') === `#${id}`);
+              });
+            }
           }
         });
       },
-      { rootMargin: '-35% 0px -55% 0px', threshold: 0 }
+      { rootMargin: '-30% 0px -55% 0px', threshold: 0 }
     );
     navTargets.forEach((sec) => sectionObserver.observe(sec));
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (window.scrollY < 240) clearActiveNavLinks();
+      },
+      { passive: true }
+    );
   }
 });
