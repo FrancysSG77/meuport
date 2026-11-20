@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="finBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080f"/>
+      <stop offset="50%" stop-color="#0f1124"/>
+      <stop offset="100%" stop-color="#05060b"/>
+    </linearGradient>
+
+    <linearGradient id="finCardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="50%" stop-color="#7B2CBF"/>
+      <stop offset="100%" stop-color="#F72585"/>
+    </linearGradient>
+
+    <linearGradient id="finCardGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#12162e"/>
+      <stop offset="100%" stop-color="#242b54"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#00BBF9"/>
+    </linearGradient>
+
+    <filter id="finGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#finBg)"/>
+
+  <!-- Ambient light blobs -->
+  <circle cx="280" cy="300" r="220" fill="url(#finCardGrad1)" opacity="0.18" filter="url(#finGlow)"/>
+  <circle cx="850" cy="200" r="180" fill="#00F5D4" opacity="0.1" filter="url(#finGlow)"/>
+
+  <!-- Browser Frame -->
+  <rect x="30" y="25" width="940" height="590" rx="14" fill="#0b0d18" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+
+  <!-- Browser Top Bar -->
+  <rect x="30" y="25" width="940" height="42" rx="14" fill="rgba(18, 22, 38, 0.95)"/>
+  <circle cx="55" cy="46" r="5" fill="#ff5f56"/>
+  <circle cx="72" cy="46" r="5" fill="#ffbd2e"/>
+  <circle cx="89" cy="46" r="5" fill="#27c93f"/>
+
+  <rect x="120" y="35" width="460" height="22" rx="6" fill="rgba(10, 12, 20, 0.6)" stroke="rgba(255,255,255,0.06)"/>
+  <text x="135" y="50" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">https://<tspan fill="#00F5D4">neobank.nexus.finance</tspan> // FINTECH LANDING PAGE PILOT</text>
+
+  <!-- NeoBank Landing Page Content -->
+  <!-- Navigation inside landing page -->
+  <g transform="translate(60, 90)">
+    <text x="0" y="20" fill="#ffffff" font-family="'Syne', sans-serif" font-size="18" font-weight="800">NEO<tspan fill="#00F5D4">BANK</tspan></text>
+    
+    <g transform="translate(360, 18)" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#94a3b8">
+      <text x="0" y="0">Produtos</text>
+      <text x="90" y="0">Cartão VISA</text>
+      <text x="190" y="0">Investimentos</text>
+      <text x="310" y="0">Segurança</text>
+    </g>
+
+    <rect x="760" y="0" width="120" height="32" rx="16" fill="url(#neonCyan)"/>
+    <text x="795" y="20" fill="#07090e" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Abrir Conta</text>
+  </g>
+
+  <!-- Hero Section of NeoBank -->
+  <g transform="translate(60, 170)">
+    <!-- Left Hero Headline -->
+    <g transform="translate(0, 30)">
+      <rect width="130" height="24" rx="12" fill="rgba(0, 245, 212, 0.12)" stroke="url(#neonCyan)" stroke-width="0.8"/>
+      <text x="12" y="16" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700">BANCO DO FUTURO • 2026</text>
+
+      <text x="0" y="70" fill="#ffffff" font-family="'Syne', sans-serif" font-size="38" font-weight="800" line-height="1.1">
+        O Futuro do seu
+      </text>
+      <text x="0" y="115" fill="url(#neonCyan)" font-family="'Syne', sans-serif" font-size="38" font-weight="800">
+        Dinheiro Sem Limites.
+      </text>
+
+      <text x="0" y="155" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="13" max-width="400">
+        Cartões virtuais instantâneos, transferências internacionais em segundos e rendimentos diários na palma da mão.
+      </text>
+
+      <!-- CTA Row -->
+      <g transform="translate(0, 190)">
+        <rect width="160" height="44" rx="22" fill="url(#neonCyan)"/>
+        <text x="38" y="27" fill="#07090e" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Criar Conta Grátis</text>
+
+        <rect x="180" width="140" height="44" rx="22" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)"/>
+        <text x="210" y="27" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12">Saber Mais ➔</text>
+      </g>
+
+      <!-- Trust signals -->
+      <g transform="translate(0, 265)">
+        <text x="0" y="0" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">+250.000 CLIENTES ATIVOS EM ÁFRICA E EUROPA</text>
+        <circle cx="310" cy="-4" r="4" fill="#00F5D4"/>
+        <text x="320" y="0" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="10">4.9 ★★★★★</text>
+      </g>
+    </g>
+
+    <!-- Right Side: 3D Floating Glass Cards Presentation -->
+    <g transform="translate(480, 0)">
+      <!-- Back Card (Rotated slightly) -->
+      <g transform="translate(40, 20) rotate(-10)">
+        <rect width="320" height="195" rx="16" fill="url(#finCardGrad2)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="24" y="38" fill="#64748b" font-family="'Syne', sans-serif" font-size="14" font-weight="800">NEOBANK BLACK</text>
+        <text x="24" y="110" fill="#475569" font-family="'Space Grotesk', sans-serif" font-size="16">•••• •••• •••• 9821</text>
+        <text x="24" y="170" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="11">FRANCISCO GANGA</text>
+        <text x="250" y="170" fill="#ffffff" font-family="'Syne', sans-serif" font-size="16" font-weight="800">VISA</text>
+      </g>
+
+      <!-- Foreground Card (Floating Hologram Glass) -->
+      <g transform="translate(90, 80) rotate(5)">
+        <rect width="320" height="195" rx="16" fill="url(#finCardGrad1)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" filter="url(#finGlow)" opacity="0.95"/>
+        
+        <!-- Chip icon -->
+        <rect x="24" y="24" width="38" height="28" rx="4" fill="#FFD166" stroke="#ffffff" stroke-width="0.8"/>
+        <text x="240" y="38" fill="#ffffff" font-family="'Syne', sans-serif" font-size="14" font-weight="800">PLATINUM</text>
+
+        <!-- Numbers -->
+        <text x="24" y="115" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" letter-spacing="2">4522 8901 2341 6720</text>
+        
+        <text x="24" y="168" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11">FRANCISCO GANGA</text>
+        <text x="170" y="168" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="10">VAL 12/29</text>
+        <text x="250" y="170" fill="#ffffff" font-family="'Syne', sans-serif" font-size="18" font-weight="800">VISA</text>
+      </g>
+
+      <!-- Floating Transaction Badge -->
+      <g transform="translate(60, 270)">
+        <rect width="240" height="58" rx="12" fill="rgba(12, 15, 28, 0.9)" stroke="rgba(0, 245, 212, 0.35)" stroke-width="1"/>
+        <circle cx="28" cy="29" r="16" fill="rgba(0,245,212,0.15)"/>
+        <text x="22" y="34" fill="#00F5D4" font-size="16">↓</text>
+        <text x="56" y="24" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600">Transferência Recebida</text>
+        <text x="56" y="42" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">+ 3.450.000,00 Kz</text>
+      </g>
+    </g>
+  </g>
+</svg>

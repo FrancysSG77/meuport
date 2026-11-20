@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="kbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B131E"/>
+      <stop offset="100%" stop-color="#070B12"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#kbg)"/>
+  <!-- Top Navbar -->
+  <rect x="44" y="36" width="1112" height="64" rx="14" fill="#101A28" stroke="#1E2E42"/>
+  <text x="76" y="76" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="22">KUBICO<tspan fill="#00F5D4">.</tspan></text>
+  <text x="230" y="74" fill="#94A3B8" font-family="sans-serif" font-size="13">Habitação Acessível   •   Projetos em Angola   •   Impacto Social</text>
+  <rect x="936" y="48" width="196" height="40" rx="20" fill="url(#accent)"/>
+  <text x="1034" y="73" text-anchor="middle" fill="#041014" font-family="sans-serif" font-weight="800" font-size="13">Campanha Fundcube ↗</text>
+
+  <!-- Hero Split -->
+  <rect x="44" y="126" width="660" height="330" rx="18" fill="#101A28" stroke="#1E2E42"/>
+  <rect x="76" y="158" width="236" height="28" rx="14" fill="#00F5D4" fill-opacity="0.14"/>
+  <text x="194" y="177" text-anchor="middle" fill="#00F5D4" font-family="monospace" font-weight="700" font-size="11">SOCIAL TECH • HABITAÇÃO AO</text>
+  <text x="76" y="232" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="38">Democratizar o Acesso</text>
+  <text x="76" y="278" fill="#00F5D4" font-family="sans-serif" font-weight="800" font-size="38">à Habitação em Angola.</text>
+  <text x="76" y="324" fill="#94A3B8" font-family="sans-serif" font-size="15">Plataforma digital transparente que conecta famílias,</text>
+  <text x="76" y="348" fill="#94A3B8" font-family="sans-serif" font-size="15">cooperativas habitacionais e financiamento acessível.</text>
+  <rect x="76" y="382" width="210" height="46" rx="23" fill="#FFFFFF"/>
+  <text x="181" y="410" text-anchor="middle" fill="#070B12" font-family="sans-serif" font-weight="800" font-size="14">Explorar Habitações</text>
+  <rect x="302" y="382" width="190" height="46" rx="23" fill="none" stroke="#00F5D4" stroke-width="1.5"/>
+  <text x="397" y="410" text-anchor="middle" fill="#00F5D4" font-family="sans-serif" font-weight="700" font-size="14">Simular Parcela</text>
+
+  <!-- Right Feature Card -->
+  <rect x="728" y="126" width="428" height="330" rx="18" fill="#0E1726" stroke="#00F5D4" stroke-opacity="0.35"/>
+  <text x="760" y="166" fill="#00F5D4" font-family="monospace" font-size="12">IMPACTO &amp; TRANSPARÊNCIA</text>
+  <text x="760" y="206" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="24">Centralidade &amp; Cooperativas</text>
+  <!-- Mockup House Blocks -->
+  <rect x="760" y="230" width="364" height="92" rx="12" fill="#152336"/>
+  <text x="782" y="264" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="15">Projeto Kilamba Sul — T2/T3</text>
+  <text x="782" y="288" fill="#94A3B8" font-family="sans-serif" font-size="13">Luanda • Renda Resolúvel Verificada</text>
+  <rect x="782" y="302" width="240" height="6" rx="3" fill="#1E293B"/>
+  <rect x="782" y="302" width="184" height="6" rx="3" fill="#00F5D4"/>
+
+  <rect x="760" y="338" width="364" height="92" rx="12" fill="#152336"/>
+  <text x="782" y="372" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="15">Cooperativa Zango Verde</text>
+  <text x="782" y="396" fill="#94A3B8" font-family="sans-serif" font-size="13">Submetido na Fundcube • Inclusão Digital</text>
+  <rect x="782" y="410" width="240" height="6" rx="3" fill="#1E293B"/>
+  <rect x="782" y="410" width="212" height="6" rx="3" fill="#10B981"/>
+
+  <!-- Bottom 3 Cards -->
+  <rect x="44" y="482" width="354" height="226" rx="16" fill="#101A28" stroke="#1E2E42"/>
+  <text x="72" y="524" fill="#00F5D4" font-family="monospace" font-size="12">01 / ACESSO</text>
+  <text x="72" y="562" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="22">Listagens Verificadas</text>
+  <text x="72" y="598" fill="#94A3B8" font-family="sans-serif" font-size="14">Combate à informalidade e fraude</text>
+  <text x="72" y="622" fill="#94A3B8" font-family="sans-serif" font-size="14">no mercado imobiliário angolano.</text>
+
+  <rect x="422" y="482" width="354" height="226" rx="16" fill="#101A28" stroke="#1E2E42"/>
+  <text x="450" y="524" fill="#00F5D4" font-family="monospace" font-size="12">02 / SIMULAÇÃO</text>
+  <text x="450" y="562" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="22">Plano Financeiro Claro</text>
+  <text x="450" y="598" fill="#94A3B8" font-family="sans-serif" font-size="14">Cálculo imediato de prestações,</text>
+  <text x="450" y="622" fill="#94A3B8" font-family="sans-serif" font-size="14">prazos e elegibilidade habitacional.</text>
+
+  <rect x="800" y="482" width="356" height="226" rx="16" fill="#101A28" stroke="#1E2E42"/>
+  <text x="828" y="524" fill="#00F5D4" font-family="monospace" font-size="12">03 / FUNDCUBE</text>
+  <text x="828" y="562" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="22">Impacto Social Tech</text>
+  <text x="828" y="598" fill="#94A3B8" font-family="sans-serif" font-size="14">Iniciativa concebida para escalar</text>
+  <text x="828" y="622" fill="#94A3B8" font-family="sans-serif" font-size="14">moradia digna em todo o território.</text>
+</svg>

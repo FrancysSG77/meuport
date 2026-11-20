@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <!-- Dark Tech Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c16"/>
+      <stop offset="50%" stop-color="#0d1124"/>
+      <stop offset="100%" stop-color="#07080f"/>
+    </linearGradient>
+
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </linearGradient>
+
+    <linearGradient id="purpleNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A259FF"/>
+      <stop offset="100%" stop-color="#7928CA"/>
+    </linearGradient>
+
+    <linearGradient id="orangeAlert" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5E00"/>
+      <stop offset="100%" stop-color="#FF007A"/>
+    </linearGradient>
+
+    <linearGradient id="glassCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 38, 64, 0.6)"/>
+      <stop offset="100%" stop-color="rgba(15, 18, 32, 0.4)"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="radarGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="subtleGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="520" fill="url(#bgGrad)"/>
+  <rect width="800" height="520" fill="url(#subtleGrid)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="680" cy="120" r="160" fill="url(#cyanNeon)" opacity="0.12" filter="url(#radarGlow)"/>
+  <circle cx="120" cy="400" r="180" fill="url(#purpleNeon)" opacity="0.1" filter="url(#radarGlow)"/>
+
+  <!-- Window Header / Browser Chrome -->
+  <rect x="30" y="25" width="740" height="470" rx="14" fill="#0c0e18" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  
+  <!-- Top bar -->
+  <rect x="30" y="25" width="740" height="44" rx="14" fill="rgba(20,24,38,0.8)"/>
+  <circle cx="56" cy="47" r="5" fill="#ff5f56"/>
+  <circle cx="74" cy="47" r="5" fill="#ffbd2e"/>
+  <circle cx="92" cy="47" r="5" fill="#27c93f"/>
+
+  <!-- Top bar Title & Status -->
+  <text x="125" y="52" fill="#8892b0" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500">securpro.enterprise.cyber-core // LIVE RADAR</text>
+  
+  <rect x="630" y="37" width="120" height="22" rx="11" fill="rgba(0, 245, 212, 0.1)" stroke="url(#cyanNeon)" stroke-width="1"/>
+  <circle cx="645" cy="48" r="3.5" fill="#00F5D4"/>
+  <text x="657" y="52" fill="#00F5D4" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">THREATS: 0</text>
+
+  <!-- Dashboard Body Layout -->
+  
+  <!-- Left Side: Radar Widget -->
+  <g transform="translate(60, 95)">
+    <!-- Glass Panel -->
+    <rect width="320" height="370" rx="12" fill="url(#glassCardGrad)" stroke="rgba(0, 245, 212, 0.2)" stroke-width="1"/>
+    
+    <text x="24" y="32" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">ESCUDO ATIVO // RADAR 360°</text>
+    <text x="24" y="48" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Monitoramento de nós neurais</text>
+
+    <!-- Concentric Radar Rings -->
+    <g transform="translate(160, 195)">
+      <circle cx="0" cy="0" r="110" fill="none" stroke="rgba(0, 245, 212, 0.1)" stroke-width="1" stroke-dasharray="4 4"/>
+      <circle cx="0" cy="0" r="85" fill="none" stroke="rgba(0, 245, 212, 0.2)" stroke-width="1"/>
+      <circle cx="0" cy="0" r="60" fill="none" stroke="rgba(0, 245, 212, 0.25)" stroke-width="1" stroke-dasharray="2 2"/>
+      <circle cx="0" cy="0" r="35" fill="none" stroke="rgba(0, 245, 212, 0.4)" stroke-width="1"/>
+      <circle cx="0" cy="0" r="6" fill="#00F5D4" filter="url(#cyanGlow)"/>
+
+      <!-- Crosshairs -->
+      <line x1="-120" y1="0" x2="120" y2="0" stroke="rgba(0, 245, 212, 0.15)" stroke-width="1"/>
+      <line x1="0" y1="-120" x2="0" y2="120" stroke="rgba(0, 245, 212, 0.15)" stroke-width="1"/>
+
+      <!-- Radar Sweep Beam (Pie slice) -->
+      <path d="M0 0 L 80 -75 A 110 110 0 0 0 10 -110 Z" fill="url(#cyanNeon)" opacity="0.35"/>
+      <line x1="0" y1="0" x2="80" y2="-75" stroke="#00F5D4" stroke-width="2" filter="url(#cyanGlow)"/>
+
+      <!-- Radar Blips -->
+      <circle cx="45" cy="-35" r="4" fill="#00F5D4" filter="url(#cyanGlow)"/>
+      <circle cx="-50" cy="40" r="3" fill="#A259FF"/>
+      <circle cx="70" cy="30" r="3.5" fill="#00F5D4"/>
+      <circle cx="-30" cy="-65" r="3" fill="#00F5D4"/>
+    </g>
+
+    <!-- Radar footer metrics -->
+    <rect x="24" y="325" width="130" height="28" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+    <text x="36" y="343" fill="#8892b0" font-family="'JetBrains Mono', monospace" font-size="10">UPTIME: 99.99%</text>
+
+    <rect x="166" y="325" width="130" height="28" rx="6" fill="rgba(0, 245, 212, 0.05)" stroke="rgba(0, 245, 212, 0.2)"/>
+    <text x="178" y="343" fill="#00F5D4" font-family="'JetBrains Mono', monospace" font-size="10">FIREWALL: ON</text>
+  </g>
+
+  <!-- Right Side Widgets -->
+  <g transform="translate(400, 95)">
+    <!-- Top Stat Row (2 cards) -->
+    <g transform="translate(0, 0)">
+      <rect width="165" height="100" rx="10" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <text x="18" y="28" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">TOTAL BLOQUEIOS</text>
+      <text x="18" y="62" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="700">148,290</text>
+      <text x="18" y="84" fill="#00F5D4" font-family="'JetBrains Mono', monospace" font-size="10">↑ +14.2% mitigados</text>
+    </g>
+
+    <g transform="translate(175, 0)">
+      <rect width="165" height="100" rx="10" fill="url(#glassCardGrad)" stroke="rgba(162, 89, 255, 0.3)" stroke-width="1"/>
+      <text x="18" y="28" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">LATÊNCIA GLOBAL</text>
+      <text x="18" y="62" fill="#A259FF" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="700">18.4ms</text>
+      <text x="18" y="84" fill="#00F5D4" font-family="'JetBrains Mono', monospace" font-size="10">⚡ Ultra-baixa</text>
+    </g>
+
+    <!-- Bottom Wide Chart Card -->
+    <g transform="translate(0, 115)">
+      <rect width="340" height="255" rx="12" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      
+      <text x="20" y="30" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">FLUXO DE PACOTES CRIPTOGRAFADOS</text>
+      
+      <!-- Tech Bar Graph -->
+      <g transform="translate(20, 60)">
+        <!-- Grid lines -->
+        <line x1="0" y1="0" x2="300" y2="0" stroke="rgba(255,255,255,0.05)"/>
+        <line x1="0" y1="40" x2="300" y2="40" stroke="rgba(255,255,255,0.05)"/>
+        <line x1="0" y1="80" x2="300" y2="80" stroke="rgba(255,255,255,0.05)"/>
+        <line x1="0" y1="120" x2="300" y2="120" stroke="rgba(255,255,255,0.08)"/>
+
+        <!-- Gradient Area Graph Line -->
+        <path d="M 0 100 Q 40 40, 80 70 T 160 30 T 220 50 T 300 20 L 300 120 L 0 120 Z" fill="url(#cyanNeon)" opacity="0.15"/>
+        <path d="M 0 100 Q 40 40, 80 70 T 160 30 T 220 50 T 300 20" fill="none" stroke="url(#cyanNeon)" stroke-width="2.5" filter="url(#cyanGlow)"/>
+
+        <!-- Peak nodes -->
+        <circle cx="160" cy="30" r="4" fill="#00F5D4" filter="url(#cyanGlow)"/>
+        <circle cx="300" cy="20" r="4" fill="#A259FF"/>
+
+        <!-- Mini Telemetry Pill on peak -->
+        <rect x="130" y="5" width="60" height="18" rx="4" fill="#000" stroke="#00F5D4" stroke-width="0.8"/>
+        <text x="140" y="17" fill="#00F5D4" font-family="'JetBrains Mono', monospace" font-size="8">1.4 TB/s</text>
+      </g>
+
+      <!-- Mini Nodes status table -->
+      <g transform="translate(20, 205)">
+        <circle cx="6" cy="6" r="4" fill="#00F5D4"/>
+        <text x="18" y="10" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">Cluster Alpha: Saudável</text>
+
+        <circle cx="170" cy="6" r="4" fill="#A259FF"/>
+        <text x="182" y="10" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">Node Zero: Sincronizado</text>
+      </g>
+    </g>
+  </g>
+</svg>

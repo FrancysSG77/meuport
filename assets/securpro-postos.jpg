@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="secPostosBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c16"/>
+      <stop offset="50%" stop-color="#0e1328"/>
+      <stop offset="100%" stop-color="#06070d"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#00BBF9"/>
+    </linearGradient>
+
+    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5E00"/>
+      <stop offset="100%" stop-color="#FF007A"/>
+    </linearGradient>
+
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(24, 30, 52, 0.75)"/>
+      <stop offset="100%" stop-color="rgba(12, 16, 30, 0.5)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#secPostosBg)"/>
+
+  <!-- Window Frame -->
+  <rect x="25" y="25" width="950" height="590" rx="14" fill="#0c0e1a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  
+  <rect x="25" y="25" width="950" height="42" rx="14" fill="rgba(20,24,38,0.9)"/>
+  <circle cx="50" cy="46" r="5" fill="#ff5f56"/>
+  <circle cx="68" cy="46" r="5" fill="#ffbd2e"/>
+  <circle cx="86" cy="46" r="5" fill="#27c93f"/>
+  <text x="120" y="51" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="12">SECURPRO // GESTÃO DE POSTOS DE VIGILÂNCIA & ALOCAÇÃO DE EFETIVOS</text>
+
+  <!-- Content Layout: Post Grid -->
+  <g transform="translate(60, 90)">
+    <!-- Header Filter Bar -->
+    <text x="0" y="16" fill="#ffffff" font-family="'Syne', sans-serif" font-size="20" font-weight="800">POSTOS ATIVOS EM LUANDA (324)</text>
+    <rect x="730" y="-4" width="150" height="30" rx="6" fill="rgba(0,245,212,0.12)" stroke="url(#neonCyan)"/>
+    <text x="745" y="16" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">+ NOVO POSTO</text>
+
+    <!-- Post Card 1 -->
+    <g transform="translate(0, 45)">
+      <rect width="280" height="210" rx="10" fill="url(#panelGrad)" stroke="rgba(0,245,212,0.3)"/>
+      <rect x="14" y="14" width="55" height="20" rx="4" fill="rgba(0,245,212,0.15)"/>
+      <text x="22" y="28" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700">ONLINE</text>
+      <text x="14" y="60" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Banco Angolano (Sede)</text>
+      <text x="14" y="78" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">Zona Financeira • Ingombota</text>
+      
+      <line x1="14" y1="95" x2="266" y2="95" stroke="rgba(255,255,255,0.06)"/>
+      <text x="14" y="118" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Efetivos Alocados: <tspan fill="#ffffff" font-weight="700">8 Guardas</tspan></text>
+      <text x="14" y="138" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Última Ronda: <tspan fill="#00F5D4">Há 4 min (OK)</tspan></text>
+      <text x="14" y="158" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Status das Câmaras: <tspan fill="#00F5D4">16/16 Ativas</tspan></text>
+
+      <rect x="14" y="172" width="252" height="26" rx="5" fill="rgba(255,255,255,0.04)"/>
+      <text x="100" y="189" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Ver Detalhes do Posto</text>
+    </g>
+
+    <!-- Post Card 2 -->
+    <g transform="translate(300, 45)">
+      <rect width="280" height="210" rx="10" fill="url(#panelGrad)" stroke="rgba(255,255,255,0.08)"/>
+      <rect x="14" y="14" width="55" height="20" rx="4" fill="rgba(0,245,212,0.15)"/>
+      <text x="22" y="28" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700">ONLINE</text>
+      <text x="14" y="60" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Condomínio Rosa Linda</text>
+      <text x="14" y="78" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">Talatona • Portaria Central</text>
+      
+      <line x1="14" y1="95" x2="266" y2="95" stroke="rgba(255,255,255,0.06)"/>
+      <text x="14" y="118" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Efetivos Alocados: <tspan fill="#ffffff" font-weight="700">4 Guardas</tspan></text>
+      <text x="14" y="138" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Última Ronda: <tspan fill="#00F5D4">Há 11 min (OK)</tspan></text>
+      <text x="14" y="158" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Status das Câmaras: <tspan fill="#00F5D4">8/8 Ativas</tspan></text>
+
+      <rect x="14" y="172" width="252" height="26" rx="5" fill="rgba(255,255,255,0.04)"/>
+      <text x="100" y="189" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Ver Detalhes do Posto</text>
+    </g>
+
+    <!-- Post Card 3 (Attention alert) -->
+    <g transform="translate(600, 45)">
+      <rect width="280" height="210" rx="10" fill="url(#panelGrad)" stroke="rgba(255,94,0,0.35)"/>
+      <rect x="14" y="14" width="70" height="20" rx="4" fill="rgba(255,94,0,0.15)"/>
+      <text x="22" y="28" fill="#FF5E00" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700">TROCA TURNO</text>
+      <text x="14" y="60" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Parque Industrial Viana</text>
+      <text x="14" y="78" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">Viana • Armazéns Norte</text>
+      
+      <line x1="14" y1="95" x2="266" y2="95" stroke="rgba(255,255,255,0.06)"/>
+      <text x="14" y="118" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Efetivos Alocados: <tspan fill="#ffffff" font-weight="700">12 Guardas</tspan></text>
+      <text x="14" y="138" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Troca em Curso: <tspan fill="#FF5E00">4 Guardas a entrar</tspan></text>
+      <text x="14" y="158" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Status das Câmaras: <tspan fill="#00F5D4">24/24 Ativas</tspan></text>
+
+      <rect x="14" y="172" width="252" height="26" rx="5" fill="rgba(255,94,0,0.1)"/>
+      <text x="96" y="189" fill="#FF5E00" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="600">Acompanhar Troca ➔</text>
+    </g>
+
+    <!-- Bottom summary row -->
+    <g transform="translate(0, 275)">
+      <rect width="880" height="200" rx="10" fill="rgba(15, 20, 36, 0.7)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="24" y="32" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">MAPA TÁTICO DE RECOLHA DE PONTOS DE RONDA (GPS NFC)</text>
+      
+      <!-- Simulated GPS grid routes -->
+      <path d="M 40 100 Q 180 50, 320 120 T 560 80 T 780 130" fill="none" stroke="url(#neonCyan)" stroke-width="2.5"/>
+      <circle cx="40" cy="100" r="6" fill="#00F5D4"/>
+      <circle cx="320" cy="120" r="6" fill="#00F5D4"/>
+      <circle cx="560" cy="80" r="6" fill="#00F5D4"/>
+      <circle cx="780" cy="130" r="6" fill="#FF5E00"/>
+
+      <text x="40" y="175" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="11">Rota Patrulha Luanda Sul • 100% de pontos NFC validados dentro da janela de tempo prevista.</text>
+    </g>
+  </g>
+</svg>

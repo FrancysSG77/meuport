@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E1A"/>
+      <stop offset="100%" stop-color="#06080F"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141B2D"/>
+      <stop offset="100%" stop-color="#0E1321"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- Sidebar -->
+  <rect x="36" y="36" width="220" height="678" rx="16" fill="#0D1220" stroke="#1E293B" stroke-width="1.5"/>
+  <circle cx="72" cy="78" r="14" fill="url(#cyanGrad)"/>
+  <text x="98" y="84" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="18">Kudima ERP</text>
+  <rect x="54" y="122" width="184" height="38" rx="8" fill="#00F5D4" fill-opacity="0.14" stroke="#00F5D4" stroke-opacity="0.4"/>
+  <text x="72" y="146" fill="#00F5D4" font-family="sans-serif" font-weight="700" font-size="13">Gestão Comercial</text>
+  <text x="72" y="188" fill="#94A3B8" font-family="sans-serif" font-size="13">Faturação AGT</text>
+  <text x="72" y="224" fill="#94A3B8" font-family="sans-serif" font-size="13">Clientes &amp; POS</text>
+  <text x="72" y="260" fill="#94A3B8" font-family="sans-serif" font-size="13">Stock &amp; Armazéns</text>
+  <text x="72" y="296" fill="#94A3B8" font-family="sans-serif" font-size="13">SAF-T (AO) Export</text>
+  <rect x="54" y="620" width="184" height="72" rx="10" fill="#0A1922" stroke="#00F5D4" stroke-opacity="0.35"/>
+  <text x="70" y="648" fill="#00F5D4" font-family="monospace" font-weight="700" font-size="11">CERTIFICADO AGT</text>
+  <text x="70" y="672" fill="#CBD5E1" font-family="sans-serif" font-size="12">Conformidade Fiscal AO</text>
+
+  <!-- Header -->
+  <text x="290" y="78" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="26">Módulo de Gestão Comercial &amp; Faturação</text>
+  <text x="290" y="104" fill="#94A3B8" font-family="sans-serif" font-size="14">Fluxos de venda, emissão de faturas certificadas e controlo fiscal AGT (Angola)</text>
+  <rect x="972" y="54" width="192" height="42" rx="21" fill="url(#cyanGrad)"/>
+  <text x="1068" y="80" text-anchor="middle" fill="#05080F" font-family="sans-serif" font-weight="800" font-size="13">+ Nova Fatura FT</text>
+
+  <!-- KPI Cards -->
+  <rect x="290" y="132" width="278" height="118" rx="14" fill="url(#cardGrad)" stroke="#1E293B"/>
+  <text x="314" y="164" fill="#94A3B8" font-family="monospace" font-size="11">FATURAÇÃO MENSAL (AOA)</text>
+  <text x="314" y="204" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="28">14.820.500 Kz</text>
+  <text x="314" y="230" fill="#00F5D4" font-family="monospace" font-size="12">+18.4% vs mês anterior</text>
+
+  <rect x="588" y="132" width="278" height="118" rx="14" fill="url(#cardGrad)" stroke="#1E293B"/>
+  <text x="612" y="164" fill="#94A3B8" font-family="monospace" font-size="11">DOCUMENTOS CERTIFICADOS</text>
+  <text x="612" y="204" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="28">1.284</text>
+  <text x="612" y="230" fill="#38BDF8" font-family="monospace" font-size="12">Hash AGT 100% Válido</text>
+
+  <rect x="886" y="132" width="278" height="118" rx="14" fill="url(#cardGrad)" stroke="#1E293B"/>
+  <text x="910" y="164" fill="#94A3B8" font-family="monospace" font-size="11">IVA APURADO (14%)</text>
+  <text x="910" y="204" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="28">2.074.870 Kz</text>
+  <text x="910" y="230" fill="#A78BFA" font-family="monospace" font-size="12">SAF-T pronto p/ submissão</text>
+
+  <!-- Table Panel -->
+  <rect x="290" y="276" width="874" height="438" rx="16" fill="url(#cardGrad)" stroke="#1E293B"/>
+  <text x="318" y="316" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="17">Últimas Faturas &amp; Recibos (Série 2026)</text>
+  <line x1="318" y1="338" x2="1136" y2="338" stroke="#1E293B"/>
+  <text x="318" y="366" fill="#64748B" font-family="monospace" font-size="12">DOCUMENTO</text>
+  <text x="500" y="366" fill="#64748B" font-family="monospace" font-size="12">CLIENTE / NIF</text>
+  <text x="790" y="366" fill="#64748B" font-family="monospace" font-size="12">VALOR TOTAL</text>
+  <text x="980" y="366" fill="#64748B" font-family="monospace" font-size="12">ESTADO AGT</text>
+
+  <!-- Rows -->
+  <rect x="318" y="388" width="818" height="58" rx="10" fill="#0D1424"/>
+  <text x="336" y="422" fill="#00F5D4" font-family="monospace" font-weight="700" font-size="13">FT 2026/0142</text>
+  <text x="500" y="422" fill="#F1F5F9" font-family="sans-serif" font-size="14">Sonangol Distribuidora, S.A.</text>
+  <text x="790" y="422" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="14">3.450.000 Kz</text>
+  <rect x="980" y="403" width="128" height="28" rx="14" fill="#00F5D4" fill-opacity="0.15"/>
+  <text x="1044" y="421" text-anchor="middle" fill="#00F5D4" font-family="monospace" font-weight="700" font-size="11">ASSINADA</text>
+
+  <rect x="318" y="460" width="818" height="58" rx="10" fill="#0D1424"/>
+  <text x="336" y="494" fill="#00F5D4" font-family="monospace" font-weight="700" font-size="13">FR 2026/0141</text>
+  <text x="500" y="494" fill="#F1F5F9" font-family="sans-serif" font-size="14">Grupo Alimentar Luanda Lda</text>
+  <text x="790" y="494" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="14">1.185.000 Kz</text>
+  <rect x="980" y="475" width="128" height="28" rx="14" fill="#00F5D4" fill-opacity="0.15"/>
+  <text x="1044" y="493" text-anchor="middle" fill="#00F5D4" font-family="monospace" font-weight="700" font-size="11">LIQUIDADA</text>
+
+  <rect x="318" y="532" width="818" height="58" rx="10" fill="#0D1424"/>
+  <text x="336" y="566" fill="#00F5D4" font-family="monospace" font-weight="700" font-size="13">FT 2026/0140</text>
+  <text x="500" y="566" fill="#F1F5F9" font-family="sans-serif" font-size="14">Kwanza Tech Solutions</text>
+  <text x="790" y="566" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="14">890.400 Kz</text>
+  <rect x="980" y="547" width="128" height="28" rx="14" fill="#38BDF8" fill-opacity="0.15"/>
+  <text x="1044" y="565" text-anchor="middle" fill="#38BDF8" font-family="monospace" font-weight="700" font-size="11">EMITIDA</text>
+
+  <rect x="318" y="604" width="818" height="58" rx="10" fill="#0D1424"/>
+  <text x="336" y="638" fill="#00F5D4" font-family="monospace" font-weight="700" font-size="13">NC 2026/0019</text>
+  <text x="500" y="638" fill="#F1F5F9" font-family="sans-serif" font-size="14">Comercial Talatona, Lda</text>
+  <text x="790" y="638" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="14">420.000 Kz</text>
+  <rect x="980" y="619" width="128" height="28" rx="14" fill="#A78BFA" fill-opacity="0.15"/>
+  <text x="1044" y="637" text-anchor="middle" fill="#A78BFA" font-family="monospace" font-weight="700" font-size="11">NOTA CRÉDITO</text>
+</svg>

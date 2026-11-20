@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="anpgBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c16"/>
+      <stop offset="50%" stop-color="#0d1222"/>
+      <stop offset="100%" stop-color="#070910"/>
+    </linearGradient>
+
+    <linearGradient id="anpgCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#0099FF"/>
+    </linearGradient>
+
+    <linearGradient id="anpgGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB703"/>
+      <stop offset="100%" stop-color="#FB8500"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#anpgBg)"/>
+
+  <!-- Browser Frame -->
+  <rect x="30" y="25" width="940" height="590" rx="14" fill="#0d101c" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+
+  <!-- Window Header -->
+  <rect x="30" y="25" width="940" height="42" rx="14" fill="rgba(22, 27, 44, 0.95)"/>
+  <circle cx="55" cy="46" r="5" fill="#ff5f56"/>
+  <circle cx="72" cy="46" r="5" fill="#ffbd2e"/>
+  <circle cx="89" cy="46" r="5" fill="#27c93f"/>
+
+  <rect x="120" y="35" width="500" height="22" rx="6" fill="rgba(10, 12, 20, 0.6)" stroke="rgba(255,255,255,0.06)"/>
+  <text x="135" y="50" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">https://<tspan fill="#00F5D4">portal.anpg.gov.ao</tspan>/gestao-estrategica // WEB CONCEPT PILOT</text>
+
+  <!-- Portal Header Bar -->
+  <rect x="30" y="67" width="940" height="50" fill="#121629" stroke="rgba(255, 255, 255, 0.05)"/>
+  <text x="60" y="98" fill="#ffffff" font-family="'Syne', sans-serif" font-size="17" font-weight="800">ANPG <tspan fill="#00F5D4" font-size="11" font-weight="500">| AGÊNCIA NACIONAL DE PETRÓLEO E GÁS</tspan></text>
+  
+  <g transform="translate(480, 96)" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#94a3b8">
+    <text x="0" y="0" fill="#ffffff" font-weight="600">Panorama Geral</text>
+    <text x="130" y="0">Blocos & Bacias</text>
+    <text x="250" y="0">Relatórios & Dados</text>
+    <text x="370" y="0">Legislação</text>
+  </g>
+
+  <!-- Left Sidebar -->
+  <rect x="30" y="117" width="180" height="498" fill="rgba(13, 17, 30, 0.8)" stroke="rgba(255, 255, 255, 0.04)"/>
+  <g transform="translate(50, 145)">
+    <text x="0" y="10" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">// NAVEGAÇÃO</text>
+    
+    <rect x="0" y="24" width="140" height="30" rx="6" fill="rgba(0, 245, 212, 0.12)" stroke="url(#anpgCyan)" stroke-width="0.8"/>
+    <text x="12" y="43" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600">Produção Ativa</text>
+
+    <text x="12" y="82" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">Concessões Onshore</text>
+    <text x="12" y="116" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">Concessões Offshore</text>
+    <text x="12" y="150" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">Transparência Fiscal</text>
+    <text x="12" y="184" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">Sustentabilidade ESG</text>
+  </g>
+
+  <!-- Main Content Area -->
+  <g transform="translate(230, 135)">
+    <!-- KPI Row -->
+    <g transform="translate(0, 0)">
+      <rect width="220" height="85" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="16" y="24" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">PRODUÇÃO DIÁRIA (BPD)</text>
+      <text x="16" y="55" fill="#ffffff" font-family="'Syne', sans-serif" font-size="22" font-weight="800">1,124,500</text>
+      <text x="16" y="74" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="9">▲ +2.3% este trimestre</text>
+    </g>
+
+    <g transform="translate(240, 0)">
+      <rect width="220" height="85" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="16" y="24" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">BLOCOS EM OPERAÇÃO</text>
+      <text x="16" y="55" fill="#ffffff" font-family="'Syne', sans-serif" font-size="22" font-weight="800">42 Ativos</text>
+      <text x="16" y="74" fill="#FFB703" font-family="'Space Grotesk', sans-serif" font-size="9">● 8 em processo de licitação</text>
+    </g>
+
+    <g transform="translate(480, 0)">
+      <rect width="230" height="85" rx="8" fill="rgba(0,245,212,0.05)" stroke="rgba(0,245,212,0.25)"/>
+      <text x="16" y="24" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">DESEMPENHO AMBIENTAL</text>
+      <text x="16" y="55" fill="#00F5D4" font-family="'Syne', sans-serif" font-size="22" font-weight="800">96.8 / 100</text>
+      <text x="16" y="74" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="9">Certificação Internacional ISO 14001</text>
+    </g>
+
+    <!-- Production Histogram -->
+    <g transform="translate(0, 105)">
+      <rect width="710" height="350" rx="10" fill="rgba(16, 20, 36, 0.7)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="24" y="32" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">HISTÓRICO COMPARATIVO DE BARRIS POR BACIA (K/DIA)</text>
+      
+      <!-- Bars -->
+      <g transform="translate(50, 80)">
+        <!-- Jan -->
+        <rect x="0" y="60" width="30" height="150" rx="4" fill="#00F5D4" opacity="0.9"/>
+        <rect x="38" y="100" width="30" height="110" rx="4" fill="#0099FF" opacity="0.6"/>
+        <text x="20" y="235" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">JAN</text>
+
+        <!-- Feb -->
+        <rect x="110" y="45" width="30" height="165" rx="4" fill="#00F5D4" opacity="0.9"/>
+        <rect x="148" y="85" width="30" height="125" rx="4" fill="#0099FF" opacity="0.6"/>
+        <text x="130" y="235" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">FEV</text>
+
+        <!-- Mar -->
+        <rect x="220" y="30" width="30" height="180" rx="4" fill="#00F5D4" opacity="0.9"/>
+        <rect x="258" y="70" width="30" height="140" rx="4" fill="#0099FF" opacity="0.6"/>
+        <text x="240" y="235" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">MAR</text>
+
+        <!-- Apr -->
+        <rect x="330" y="20" width="30" height="190" rx="4" fill="#00F5D4" opacity="0.95"/>
+        <rect x="368" y="55" width="30" height="155" rx="4" fill="#0099FF" opacity="0.6"/>
+        <text x="350" y="235" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">ABR</text>
+
+        <!-- May -->
+        <rect x="440" y="10" width="30" height="200" rx="4" fill="#00F5D4"/>
+        <rect x="478" y="40" width="30" height="170" rx="4" fill="#0099FF" opacity="0.7"/>
+        <text x="460" y="235" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">MAI</text>
+
+        <!-- Jun Forecast -->
+        <rect x="550" y="5" width="30" height="205" rx="4" fill="none" stroke="#00F5D4" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <rect x="588" y="30" width="30" height="180" rx="4" fill="none" stroke="#0099FF" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text x="570" y="235" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="10">JUN*</text>
+      </g>
+
+      <!-- Legend -->
+      <g transform="translate(50, 310)">
+        <rect x="0" y="0" width="12" height="12" rx="2" fill="#00F5D4"/>
+        <text x="20" y="10" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">Bacia do Baixo Congo</text>
+        <rect x="220" y="0" width="12" height="12" rx="2" fill="#0099FF"/>
+        <text x="240" y="10" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">Bacia do Kwanza</text>
+      </g>
+    </g>
+  </g>
+</svg>

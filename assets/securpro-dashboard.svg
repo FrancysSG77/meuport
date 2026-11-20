@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="secDashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a14"/>
+      <stop offset="50%" stop-color="#0f1224"/>
+      <stop offset="100%" stop-color="#06070e"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#00BBF9"/>
+    </linearGradient>
+
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A259FF"/>
+      <stop offset="100%" stop-color="#7928CA"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(25, 32, 54, 0.7)"/>
+      <stop offset="100%" stop-color="rgba(14, 18, 32, 0.5)"/>
+    </linearGradient>
+
+    <filter id="glowFilt">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="640" fill="url(#secDashBg)"/>
+
+  <!-- Window Frame -->
+  <rect x="25" y="25" width="950" height="590" rx="14" fill="#0c0e18" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  
+  <!-- Window Header -->
+  <rect x="25" y="25" width="950" height="42" rx="14" fill="rgba(20,24,38,0.9)"/>
+  <circle cx="50" cy="46" r="5" fill="#ff5f56"/>
+  <circle cx="68" cy="46" r="5" fill="#ffbd2e"/>
+  <circle cx="86" cy="46" r="5" fill="#27c93f"/>
+  <text x="120" y="51" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="12">SECURPRO // SOC DASHBOARD • MONITORIZAÇÃO DE EFETIVOS EM TEMPO REAL</text>
+
+  <!-- Sidebar Nav -->
+  <rect x="25" y="67" width="180" height="548" fill="rgba(12, 15, 26, 0.85)" stroke="rgba(255,255,255,0.05)"/>
+  <g transform="translate(45, 95)">
+    <text x="0" y="10" fill="#00F5D4" font-family="'Syne', sans-serif" font-size="16" font-weight="800">SECURPRO</text>
+    <text x="0" y="24" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="9">SECURITY SAAS v2.4</text>
+
+    <!-- Nav Items -->
+    <rect x="-8" y="45" width="156" height="32" rx="6" fill="rgba(0, 245, 212, 0.12)" stroke="url(#neonCyan)" stroke-width="0.8"/>
+    <text x="12" y="66" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600">📊 Dashboard Geral</text>
+
+    <text x="12" y="106" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">📍 Gestão de Postos</text>
+    <text x="12" y="142" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">👮 Efetivos & Rondas</text>
+    <text x="12" y="178" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">🚨 Alertas Críticos</text>
+    <text x="12" y="214" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">📑 Relatórios & Auditoria</text>
+  </g>
+
+  <!-- Main Content Dashboard -->
+  <g transform="translate(225, 85)">
+    <!-- Top KPI Cards -->
+    <g transform="translate(0, 0)">
+      <rect width="230" height="85" rx="10" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="16" y="24" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">EFETIVOS ATIVOS</text>
+      <text x="16" y="55" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700">1,482 <tspan font-size="12" fill="#00F5D4">/ 1,500</tspan></text>
+      <text x="16" y="74" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="9">● 98.8% em serviço ativo</text>
+    </g>
+
+    <g transform="translate(245, 0)">
+      <rect width="230" height="85" rx="10" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="16" y="24" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">POSTOS VIGILADOS</text>
+      <text x="16" y="55" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700">324 Postos</text>
+      <text x="16" y="74" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="9">⚡ 0 incidentes abertos</text>
+    </g>
+
+    <g transform="translate(490, 0)">
+      <rect width="230" height="85" rx="10" fill="url(#cardGrad)" stroke="rgba(162, 89, 255, 0.3)"/>
+      <text x="16" y="24" fill="#A259FF" font-family="'Space Grotesk', sans-serif" font-size="10">TEMPO MÉDIO DE RESPOSTA</text>
+      <text x="16" y="55" fill="#A259FF" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700">01m 24s</text>
+      <text x="16" y="74" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="9">↓ -38% vs mês anterior</text>
+    </g>
+
+    <!-- Radar Widget & Live Telemetry -->
+    <g transform="translate(0, 105)">
+      <!-- Left: Real-Time Radar Map -->
+      <rect width="450" height="400" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 245, 212, 0.2)"/>
+      <text x="20" y="32" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">RADAR 360° // GEO-LOCALIZAÇÃO DE PATRULHAS</text>
+
+      <g transform="translate(225, 220)">
+        <circle cx="0" cy="0" r="140" fill="none" stroke="rgba(0, 245, 212, 0.1)" stroke-width="1" stroke-dasharray="4 4"/>
+        <circle cx="0" cy="0" r="105" fill="none" stroke="rgba(0, 245, 212, 0.15)" stroke-width="1"/>
+        <circle cx="0" cy="0" r="70" fill="none" stroke="rgba(0, 245, 212, 0.25)" stroke-width="1" stroke-dasharray="2 2"/>
+        <circle cx="0" cy="0" r="35" fill="none" stroke="rgba(0, 245, 212, 0.4)" stroke-width="1"/>
+        <circle cx="0" cy="0" r="6" fill="#00F5D4" filter="url(#glowFilt)"/>
+
+        <!-- Scan Sweep -->
+        <path d="M0 0 L 100 -95 A 140 140 0 0 0 15 -140 Z" fill="url(#neonCyan)" opacity="0.35"/>
+        <line x1="0" y1="0" x2="100" y2="-95" stroke="#00F5D4" stroke-width="2" filter="url(#glowFilt)"/>
+
+        <!-- Patrol Blips -->
+        <circle cx="65" cy="-45" r="5" fill="#00F5D4" filter="url(#glowFilt)"/>
+        <circle cx="-75" cy="50" r="4" fill="#A259FF"/>
+        <circle cx="85" cy="40" r="4.5" fill="#00F5D4"/>
+        <circle cx="-40" cy="-80" r="4" fill="#00F5D4"/>
+      </g>
+    </g>
+
+    <!-- Right: Live Operational Stream -->
+    <g transform="translate(470, 105)">
+      <rect width="250" height="400" rx="12" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="18" y="32" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">FEED DE OPERAÇÕES</text>
+
+      <g transform="translate(18, 55)">
+        <rect width="214" height="60" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)"/>
+        <text x="12" y="20" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700">POSTO 14 • BANCO BIC</text>
+        <text x="12" y="36" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Check-in biométrico efetuado</text>
+        <text x="12" y="50" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="8">Há 2 min • Guarda #402</text>
+      </g>
+
+      <g transform="translate(18, 125)">
+        <rect width="214" height="60" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)"/>
+        <text x="12" y="20" fill="#A259FF" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700">RONDA ZONA SUL</text>
+        <text x="12" y="36" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Patrulha Alpha em movimento</text>
+        <text x="12" y="50" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="8">Há 6 min • GPS Sincronizado</text>
+      </g>
+
+      <g transform="translate(18, 195)">
+        <rect width="214" height="60" rx="8" fill="rgba(0,245,212,0.05)" stroke="rgba(0,245,212,0.2)"/>
+        <text x="12" y="20" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700">CENTRO LOGÍSTICO SONANGOL</text>
+        <text x="12" y="36" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Troca de turno concluída</text>
+        <text x="12" y="50" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="8">Há 12 min • 100% OK</text>
+      </g>
+    </g>
+  </g>
+</svg>

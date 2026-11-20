@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="secLoginBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080912"/>
+      <stop offset="50%" stop-color="#101326"/>
+      <stop offset="100%" stop-color="#05060b"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#00BBF9"/>
+    </linearGradient>
+
+    <linearGradient id="glassBox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)"/>
+    </linearGradient>
+
+    <filter id="shieldGlow">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="640" fill="url(#secLoginBg)"/>
+
+  <!-- Ambient Light Reflection -->
+  <circle cx="500" cy="320" r="280" fill="url(#neonCyan)" opacity="0.08" filter="url(#shieldGlow)"/>
+
+  <!-- Center Card Frame -->
+  <g transform="translate(310, 80)">
+    <rect width="380" height="480" rx="16" fill="url(#glassBox)" stroke="rgba(255,255,255,0.12)" stroke-width="1.2"/>
+    
+    <!-- Top Glowing Shield Icon -->
+    <g transform="translate(190, 60)">
+      <circle cx="0" cy="0" r="34" fill="rgba(0, 245, 212, 0.12)" stroke="url(#neonCyan)" stroke-width="1.5" filter="url(#shieldGlow)"/>
+      <!-- Shield SVG path -->
+      <path d="M -12 -10 L 0 -16 L 12 -10 L 12 4 Q 12 14, 0 20 Q -12 14, -12 4 Z" fill="none" stroke="#00F5D4" stroke-width="2"/>
+      <path d="M -4 2 L -1 5 L 6 -2" fill="none" stroke="#00F5D4" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Header texts -->
+    <text x="190" y="125" text-anchor="middle" fill="#ffffff" font-family="'Syne', sans-serif" font-size="22" font-weight="800">SECURPRO</text>
+    <text x="190" y="145" text-anchor="middle" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="11">ACESSO CORPORATIVO • 2FA ATIVO</text>
+
+    <!-- Input 1: User -->
+    <g transform="translate(35, 175)">
+      <text x="0" y="0" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">IDENTIFICADOR DE AGENTE</text>
+      <rect x="0" y="8" width="310" height="42" rx="6" fill="rgba(10, 13, 22, 0.8)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="14" y="34" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="12">agente.luanda@securpro.ao</text>
+    </g>
+
+    <!-- Input 2: Password -->
+    <g transform="translate(35, 250)">
+      <text x="0" y="0" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">CHAVE DE SEGURANÇA CRIPTOGRAFADA</text>
+      <rect x="0" y="8" width="310" height="42" rx="6" fill="rgba(10, 13, 22, 0.8)" stroke="url(#neonCyan)" stroke-width="1"/>
+      <text x="14" y="34" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="16">••••••••••••••••</text>
+      <circle cx="288" cy="29" r="6" fill="#00F5D4"/>
+    </g>
+
+    <!-- Biometric Authentication Badge -->
+    <g transform="translate(35, 325)">
+      <rect width="310" height="38" rx="6" fill="rgba(0, 245, 212, 0.08)" stroke="rgba(0, 245, 212, 0.25)"/>
+      <text x="35" y="24" fill="#00F5D4" font-family="'Space Grotesk', sans-serif" font-size="11">🛡️ Validação Biométrica Reconhecida</text>
+    </g>
+
+    <!-- Submit CTA Button -->
+    <g transform="translate(35, 385)">
+      <rect width="310" height="46" rx="23" fill="url(#neonCyan)"/>
+      <text x="155" y="28" text-anchor="middle" fill="#07090e" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">ENTRAR NO CENTRO DE OPERAÇÕES ➔</text>
+    </g>
+
+    <text x="190" y="455" text-anchor="middle" fill="#475569" font-family="'Space Grotesk', sans-serif" font-size="9">Encriptação End-to-End AES-256 bits</text>
+  </g>
+</svg>
